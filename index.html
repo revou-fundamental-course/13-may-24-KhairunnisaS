@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">TriCalcX</h1>
+        <section>
+            <p style="text-align: center;">
+                Hai Sobat, Selamat datang di TriCalcX :]<br>
+                Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling Segitiga<br>
+            </p>
+        </section>
+    </header>
+
+    <section>
+        <!-- Title General -->
+        <div class="section-content">
+            <h3>Segitiga</h3>
+        </div>
+
+        <button type="button" id="switch-perimeter" onclick="hideOrShow()"><u>Switch</u></button>
+        
+        <section id="luas-section">
+            <!-- Konten Atas Luas Segitiga -->
+            <section>
+                <div class="section-content">
+                    <h2>Luas Segitiga</h2>
+                </div>
+    
+                <div class="formula-img">
+                    <img src="assets/image1.png">
+                </div>
+    
+                <p>
+                    Rumus Luas Segitiga yaitu :
+                    <p class="triangle-area">
+                        <b>L = 1/2 x a x t</b>
+                    </p>
+                    Di mana :<br>
+                    L = Luas<br>
+                    a = Panjang Alas<br>
+                    t = Tinggi<br>
+                </p>
+            </section>
+
+            <!-- Garis Pemisah Konten-->
+            <hr />
+
+            <!-- Konten Bawah Luas Segitiga -->
+            <section>
+                <header>
+                    <h2 style="text-align: center;">Hitung Luas Segitiga</h2>
+                </header>
+
+                <form id="luasForm">
+                    <section>
+                        <div>
+                            <label>Alas :</label><input type="number" name="alas" />
+                        </div>
+                        <div>
+                            <label>Tinggi :</label><input type="number" name="tinggi" />
+                        </div>
+                    </section>
+
+                    <p>
+                        <span id="luasProcess"></span>
+                    </p>
+
+                    <button type="button" id="hitung-luas-button">Hitung</button>
+                    <button type="reset" id="reset-luas-button">Reset</button>
+                </form>
+            </section>
+        </section>
+    </section>
+
+    <section id="keliling-section" style="display: none;">
+        <!-- Konten Atas Keliling Segitiga -->
+        <section>
+            <div class="section-content">
+                <h2>Keliling Segitiga</h2>
+            </div>
+
+            <div class="formula-img">
+                <img src="assets/image1.png">
+            </div>
+
+            <p>
+                Rumus Keliling Segitiga yaitu :
+                <p class="triangle-perameter">
+                    <b>K = S1 + S2 + S3</b>
+                </p>
+                Di mana :<br>
+                K = Keliling<br>
+                S1 = Sisi A<br>
+                S2 = Sisi B<br>
+                S3 = Sisi C<br>
+            </p>
+        </section>
+
+        <!-- Garis Pemisah Konten-->
+        <hr />
+
+        <!-- Konten Bawah Keliling Segitiga -->
+        <section >
+            <header>
+                <h2 style="text-align: center;">Hitung Keliling Segitiga</h2>
+            </header>
+
+            <form id="kelilingForm">
+                <section>
+                    <div>
+                        <label>S1 :</label><input type="number" name="s1" />
+                    </div>
+                    <div>
+                        <label>S2 :</label><input type="number" name="s2" />
+                    </div>
+                    <div>
+                        <label>S3 :</label><input type="number" name="s3" />
+                    </div>
+                </section>
+
+                <p>
+                    <span id="kelilingProcess"></span>
+                </p>
+
+                <button type="button" id="hitung-keliling-button">Hitung</button>
+                <button type="reset" id="reset-keliling-button">Reset</button>
+            </form>
+        </section>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
